@@ -75,20 +75,20 @@ cities = ['New York', 'Tokyo', 'Paris', 'Sydney', 'Berlin']
 
 
 # # Creating a tuple of buffet foods
-buffet_foods = ('Rice', 'Chicken', 'Salad', 'Soup', 'Bread')
+# buffet_foods = ('Rice', 'Chicken', 'Salad', 'Soup', 'Bread')
 
-# # Printing each food item
-print("Original menu:")
-for food in buffet_foods:
-    print(food)
+# # # Printing each food item
+# print("Original menu:")
+# for food in buffet_foods:
+#     print(food)
 
-# # Trying to modify an item (this should cause an error)
-# # buffet_foods[1] = 'Fish'  # Uncommenting this line will raise a TypeError
+# # # Trying to modify an item (this should cause an error)
+# # # buffet_foods[1] = 'Fish'  # Uncommenting this line will raise a TypeError
 
-# # Updating the menu by redefining the tuple
-buffet_foods = ('Rice', 'Fish', 'Salad', 'Pasta', 'Bread')
+# # # Updating the menu by redefining the tuple
+# buffet_foods = ('Rice', 'Fish', 'Salad', 'Pasta', 'Bread')
 
-# # Printing the updated menu
-print("\nUpdated menu:")
-for food in buffet_foods:
-    print(food)
+# # # Printing the updated menu
+# print("\nUpdated menu:")
+# for food in buffet_foods:
+#     print(food)
