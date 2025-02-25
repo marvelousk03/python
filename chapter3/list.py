@@ -61,7 +61,7 @@ print(places)
 
 
 # # Creating a list of cities
-cities = ['New York', 'Tokyo', 'Paris', 'Sydney', 'Berlin']
+# cities = ['New York', 'Tokyo', 'Paris', 'Sydney', 'Berlin']
 
 # # 1. Accessing elements
 # print("First city:", cities[0])
@@ -105,5 +105,5 @@ cities = ['New York', 'Tokyo', 'Paris', 'Sydney', 'Berlin']
 # print("Reversed list:", cities)
 
 # 8. Finding the length of the list
-print("Number of cities:", len(cities))
+# print("Number of cities:", len(cities))
 
