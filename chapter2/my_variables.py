@@ -12,10 +12,13 @@
 # print(name.upper())
 # print(name.lower())
 
+# message = "Hello Python Crash Course reader!"
+# print(message)
+
 # fname = "kelly"
 # lname = "keet"
 # fullname = f"{fname} {lname}"
-# print(f"Hello, my bestfriend's name is,  {fullname.title()}!")
+# print(f"Hello, my bestfriend's name is, {fullname.title()}!")
 
 
 # print("\tHi.\nMy name is Marvelous Favour.\nI am 19years old.\nI currently learning python.")
@@ -24,6 +27,14 @@
 # num2 = 4
 # num3 = 7
 # num4 = 9
+
+# name = "                             MARVELOUS                                              "
+# print(name.strip())
+
+# nostarch_url = 'https://marvelous.co'
+# # nostarch_url.removeprefix('https://')
+# simple_url = nostarch_url.removeprefix('https://')
+# print(simple_url)
 
 # numbers = num1 * num2 + (num3 - num4)
 # print(numbers)
@@ -36,16 +47,16 @@
 
 # NEVER_CHANGE_VALUE = "ALWAYS THE SAME"
 
-# # NEVER_CHANGE_VALUE = 'HI'
+# NEVER_CHANGE_VALUE = 'HI'
 
 # print(NEVER_CHANGE_VALUE)
 
-num1,num2,num3, num4 = 3, 4, 7, 9
-print(num2)
+# num1,num2,num3, num4 = 3, 4, 7, 9
+# print(num2)
 
-numbers = num1 * num2 + (num3 - num4)
-print(numbers)
+# numbers = num1 * num2 + (num3 - num4)
+# print(numbers)
 
-import this
+# import this
 # The Zen of Python, by Tim Peters
 # Beautiful is better than ugly.
