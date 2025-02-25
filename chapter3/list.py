@@ -50,3 +50,59 @@
 # places.sort(reverse=True)
 # print(places)
 
+
+# friends = ["Kelly", "Sandra", "Alviana", "Shantel", "Exo"]
+# friends.append("Everybody")
+# for guest in friends:
+#     print("Hey", guest,"!I'm glad you could make it!")
+
+# print(friends[1])
+
+
+# # Creating a list of cities
+# cities = ['New York', 'Tokyo', 'Paris', 'Sydney', 'Berlin']
+
+# # 1. Accessing elements
+# print("First city:", cities[0])
+# print("Last city:", cities[-1])
+
+# # 2. Modifying elements
+# cities[2] = 'London'
+# print("Modified list:", cities)
+
+# # 3. Adding elements
+# cities.append('Toronto')  # Adding to the end
+# print("After append:", cities)
+
+# cities.insert(2, 'Dubai')  # Inserting at a specific position
+# print("After insert:", cities)
+
+# # 4. Removing elements
+# del cities[3]  # Deleting by index
+# print("After del:", cities)
+
+# popped_city = cities.pop()  # Removing the last item
+# print("Popped city:", popped_city)
+# print("After pop:", cities)
+
+# removed_city = cities.remove('Dubai')  # Removing by value
+# print("After remove:", cities)
+
+# # 5. Sorting the list
+# cities.sort()  # Permanent sorting
+# print("Sorted list:", cities)
+
+# cities.sort(reverse=True)  # Reverse order sorting
+# print("Reverse sorted list:", cities)
+
+# # 6. Using sorted() for temporary sorting
+# print("Temporarily sorted list:", sorted(cities))
+# print("Original list remains:", cities)
+
+# # 7. Reversing the list
+# cities.reverse()
+# print("Reversed list:", cities)
+
+# # 8. Finding the length of the list
+# print("Number of cities:", len(cities))
+
