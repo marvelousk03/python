@@ -30,7 +30,7 @@
 # print("\nHere is the original list again:")
 # print(cars)
 
-# places = ['Mauritius', 'Mexico', 'Turkey', 'Mozambique', 'Bora-Bora']
+places = ['Mauritius', 'Mexico', 'Turkey', 'Mozambique', 'Bora-Bora']
 # print(places)
 # print(sorted(places))
 # print(places)
@@ -42,10 +42,10 @@
 # print(places)
 # places.reverse()
 # print(places)
-# places.sort()
-# print(places)
-# places.reverse()
-# print(places)
+places.sort()
+print(places)
+places.reverse()
+print(places)
 
 # places.sort(reverse=True)
 # print(places)
@@ -53,14 +53,15 @@
 
 # friends = ["Kelly", "Sandra", "Alviana", "Shantel", "Exo"]
 # friends.append("Everybody")
-# for guest in friends:
-#     print("Hey", guest,"!I'm glad you could make it!")
+# print(friends)
+# for friend in friends:
+#     print("Hey", friend,"!I'm glad you could make it!")
 
 # print(friends[1])
 
 
 # # Creating a list of cities
-# cities = ['New York', 'Tokyo', 'Paris', 'Sydney', 'Berlin']
+cities = ['New York', 'Tokyo', 'Paris', 'Sydney', 'Berlin']
 
 # # 1. Accessing elements
 # print("First city:", cities[0])
@@ -103,6 +104,6 @@
 # cities.reverse()
 # print("Reversed list:", cities)
 
-# # 8. Finding the length of the list
-# print("Number of cities:", len(cities))
+# 8. Finding the length of the list
+print("Number of cities:", len(cities))
 
