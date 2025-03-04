@@ -5,11 +5,11 @@
 
 
 
-try:
-    print(glitchy)
-except:
-    print("no value passed yet")
+# try:
+#     print(glitchy)
+# except:
+#     print("no value passed yet")
     
-glitchy = input("fix this.")
-print(glitchy)
+# glitchy = input("fix this.")
+# print(glitchy)
     
