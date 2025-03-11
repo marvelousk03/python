@@ -49,32 +49,61 @@
 # plt.show()
 
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
-# Group members and their contributions
-members = ["Ethan", "Marvelous", "Pierre", "Ronny"]
-contributions = [48, 46, 27, 22]  
+# # Group members and their contributions
+# members = ["Ethan", "Marvelous", "Pierre", "Ronny"]
+# contributions = [48, 46, 27, 22]  
 
-# Create a visually appealing line graph
-plt.figure(figsize=(9, 5))
-plt.plot(members, contributions, marker="o", linestyle="-", color="#FF4500", linewidth=4, 
-         markersize=12, markerfacecolor="black", markeredgewidth=2, markeredgecolor="yellow")
+# # Create a visually appealing line graph
+# plt.figure(figsize=(9, 5))
+# plt.plot(members, contributions, marker="o", linestyle="-", color="#FF4500", linewidth=4, 
+#          markersize=12, markerfacecolor="black", markeredgewidth=2, markeredgecolor="yellow")
 
-# Add title and labels with dramatic styling
-plt.title(" 404 Avengers - GitHub Contributions ", fontsize=20, fontweight="bold", color="purple")
-plt.xlabel("Members", fontsize=14, fontweight="bold", color="darkred")
-plt.ylabel("Number of Contributions", fontsize=14, fontweight="bold", color="darkblue")
+# # Add title and labels with dramatic styling
+# plt.title(" 404 Avengers - GitHub Contributions ", fontsize=20, fontweight="bold", color="purple")
+# plt.xlabel("Members", fontsize=14, fontweight="bold", color="darkred")
+# plt.ylabel("Number of Contributions", fontsize=14, fontweight="bold", color="darkblue")
 
-# Add value labels with enhanced styling
-for i, v in enumerate(contributions):
-    plt.text(i, v + 1, str(v), ha="center", fontsize=14, fontweight="bold", color="white",
-             bbox=dict(facecolor="blue", edgecolor="white", boxstyle="round,pad=0.5"))
+# # Add value labels with enhanced styling
+# for i, v in enumerate(contributions):
+#     plt.text(i, v + 1, str(v), ha="center", fontsize=14, fontweight="bold", color="white",
+#              bbox=dict(facecolor="blue", edgecolor="white", boxstyle="round,pad=0.5"))
 
-# Enhanced grid with neon-style glow
-plt.grid(axis="y", linestyle="--",  color="cyan")
+# # Enhanced grid with neon-style glow
+# plt.grid(axis="y", linestyle="--",  color="cyan")
 
-# Dark background for a futuristic feel
-plt.gca().set_facecolor("#222222")
+# # Dark background for a futuristic feel
+# plt.gca().set_facecolor("#222222")
 
-# Show the graph
-plt.show()
+# # Show the graph
+# plt.show()
+
+
+from random import choice
+
+class RandomWalk:
+    """A class to generate random walks."""
+
+    def __init__(self, num_points=5000):
+        self.num_points = num_points
+        self.x_values = [0]
+        self.y_values = [0]
+
+    def get_step(self):
+        """Determine the direction and distance for a step."""
+        direction = choice([1, -1])
+        distance = choice([0, 1, 2, 3, 4])
+        return direction * distance
+
+    def fill_walk(self):
+        """Calculate all the points in the walk."""
+        while len(self.x_values) < self.num_points:
+            x_step = self.get_step()
+            y_step = self.get_step()
+
+            if x_step == 0 and y_step == 0:
+                continue
+
+            self.x_values.append(self.x_values[-1] + x_step)
+            self.y_values.append(self.y_values[-1] + y_step)
