@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
+            color: navy;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book Tracker</h1>
+        {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }}!</p>
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+        {% else %}
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'admin:index' %}">Admin</a>
+        {% endif %}
+        <hr>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>
