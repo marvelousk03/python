@@ -1,13 +1,21 @@
 {% extends 'base.html' %}
+
 {% block content %}
-    <h2>Your Books</h2>
-    <a href="{% url 'book_create' %}">Add a New Book</a>
-    <ul>
-        {% for book in books %}
-            <li>{{ book.title }} by {{ book.author }} ({{ book.date_read }})
-                <a href="{% url 'book_edit' book.pk %}">Edit</a>
-                <a href="{% url 'book_delete' book.pk %}">Delete</a>
-            </li>
-        {% endfor %}
-    </ul>
+<h2>Your Books</h2>
+<a href="{% url 'book_create' %}" class="btn btn-add">➕ Add a New Book</a>
+
+<div class="book-list">
+    {% for book in books %}
+    <div class="book-card">
+        <h3>{{ book.title }}</h3>
+        <p><strong>By:</strong> {{ book.author }}</p>
+        <div class="actions">
+            <a href="{% url 'book_edit' book.id %}" class="btn btn-edit">✏️ Edit</a>
+            <a href="{% url 'book_delete' book.id %}" class="btn btn-delete">🗑️ Delete</a>
+        </div>
+    </div>
+    {% empty %}
+    <p>No books added yet.</p>
+    {% endfor %}
+</div>
 {% endblock %}
