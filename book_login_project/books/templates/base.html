@@ -40,7 +40,6 @@
             <button type="submit">Logout</button>
         </form>
         {% else %}
-        <a href="{% url 'login' %}">Login</a>
         <a href="{% url 'admin:index' %}">Admin</a>
         {% endif %}
         <hr>
